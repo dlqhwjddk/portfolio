@@ -95,10 +95,14 @@ nav a:nth-of-type(1):before{
     float: left;
 }
 .left_area .profile{
-    width: 100%;
+    width: 500px;
+    position: fixed;
+    left: 100px; top: -400px;
     margin: 20% 0 0 0;
     padding: 12% 0 0 0;
     text-align: center;
+    transition: .5s;
+    
 }
 .left_area .profile >p:nth-of-type(1){
     width: 100%;
@@ -145,6 +149,14 @@ nav a:nth-of-type(1):before{
 }
 .right_area >div{
     margin: 10% 0;
+    /*opacity: 1;
+    transform: translateY(50%);
+    transition: .5s;*/
+}
+.right_area > div.active{
+    margin: 10% 0;
+    opacity: 1;
+    transform: translateY(0);
 }
 .right_area >div:nth-of-type(1){
     margin: 0;
