@@ -1,21 +1,22 @@
 window.addEventListener("DOMContentLoaded", function(){
     
-    var profile = document.querySelector(".profile");
-    var div = document.querySelectorAll(".right_area div");
-//    console.log(div);
-//    console.log(profile);
-   /* window.addEventListener("scroll", function(){
-        
+    
+    window.addEventListener("scroll", function(e){
+        var section = document.querySelectorAll(".right_area section");
+        var winH = (window.innerHeight)-500;
         var sTop = window.scrollY;
-        console.log(sTop);
         
-        if(sTop > 2160){
-            profile.style.top = "2100px";
-        }else{
-            profile.style.top = sTop + "px";
-        }
+        for(var i=0; i<section.length; i++){
+            if(sTop >= (section[i].offsetTop)-winH){
+                section[i].classList.add("active");
+            };
+        }; 
         
-        
-    });*/
-     
+   
+    });
+    
+    var event = new CustomEvent("scroll");
+    window.dispatchEvent(event);
+    
+    
 });

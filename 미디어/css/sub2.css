@@ -1,0 +1,137 @@
+@import url("common.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/*font-family: 'Nanum Gothic', sans-serif; 나눔고딕*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/*font-family: 'Archivo', sans-serif; 네비 폰트*/
+
+/*네비*/
+nav{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 110px;
+}
+nav a{
+    font-size: 1.16rem;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    transition: .5s;
+}
+
+nav a:before{
+    content: "";
+    display: block;
+    width: 0%; height: 3px;
+    margin-left: 50%;
+    margin-bottom: 3px;
+    background: #62aaae;
+    transition: .3s;
+}
+nav a:hover:before{
+    margin-left: 0;
+    width: 100%;
+}
+nav a:hover{
+    color: #62aaae;
+}
+
+nav a:nth-of-type(3){
+    color: #62aaae;
+}
+nav a:nth-of-type(3):before{
+    margin-left: 0;
+    width: 100%;
+}
+
+.container{
+    width: 73%;
+    margin: 0 auto;
+    padding: 5% 0 0 0;
+}
+.container section{
+    width: 100%; 
+    padding-bottom: 32.5%;
+    clear: both;
+    margin: 0 0 5% 0;
+}
+
+.container section .photo{
+    width: 45%;
+    position: relative;
+}
+
+.container section .photo:hover p:nth-of-type(1){
+    transform: rotate(-8deg);
+    opacity: 0.5;
+}
+.container section .photo:hover p:nth-of-type(2){
+    transform: rotate(-16deg);
+    opacity:0.2;
+}
+
+.container section .photo p{
+    width: 100%;
+    position: absolute;
+    transition: .5s;
+}
+
+.container section .photo p img{
+    width: 100%;
+}
+.container section .text{
+    width: 45%;
+    padding: 0 2%;
+    line-height: 160%;
+    font-family: 'Nanum Gothic', sans-serif;
+    position: relative;
+}
+
+.container section .text strong{
+    font-size: 1.5vw;
+    margin: 0 0 3% 0;
+}
+.container section .text p{
+    margin: 4% 0;
+}
+
+.container section .text span{
+    font-size: 391px;
+    font-weight: bold;
+    font-family: 'Archivo', sans-serif;
+    color: rgba(0,0,0,0.05);
+    position: absolute;
+    bottom: 0;
+}
+
+.container .filming .photo{float: left;}
+.container .filming .text{float: right;}
+.container .filming .text span{right: 0;}
+
+.container .academy .photo{float: right;}
+.container .academy .text{float: left; text-align: right;}
+.container .academy .text span{left: 0;}
+
+.container .friend .photo{float: left;}
+.container .friend .text{float: right;}
+.container .friend .text span{right: 0;}
+
+
+footer{
+    border-top: 1px solid #b1b0b0;
+    clear: both;
+    text-align: center;
+    padding: 2%;
+}
+footer span{
+    color: #b1b0b0;
+}
+.top{
+    width: 60px; height: 60px;
+    position: fixed;
+    right: 3%; bottom: 13%;
+    background: #d8e7e3;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 51px;
+}

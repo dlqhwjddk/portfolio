@@ -29,7 +29,7 @@ nav a:before{
     margin-left: 50%;
     margin-bottom: 3px;
     background: #62aaae;
-    transition: .5s;
+    transition: .3s;
 }
 nav a:hover:before{
     margin-left: 0;
