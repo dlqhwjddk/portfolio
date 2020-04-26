@@ -45,54 +45,64 @@ window.addEventListener("DOMContentLoaded", function(){
             ul.style.marginLeft = -i + "px";
         },30);
     }movieSlide();
-    
-    
-    
-    
+
+    var idx = 0;
+    var ul = document.querySelector(".visual_list ul");
+    var li = ul.querySelectorAll("li");
+    var number = document.querySelector(".indi .number");
+
+    function slideEvent(i) {
+        for (var m = 0; m < li.length; m++) {
+            li[m].style.width = "0%";
+        }
+
+        setTimeout(function() {
+            li[i].style.opacity = "1";
+            li[i].style.width = "100%";
+            number.textContent = (i+1);
+        },700);
+     }
     
     
     //비주얼슬라이드
     function visualSlide(){
-        var idx = 0;
-        var ul = document.querySelector(".visual_list ul");
-        var li = ul.querySelectorAll("li");
-        var number = document.querySelector(".indi .number");
-        
-        
+
         console.log(number);
         setInterval(function(){
-            
-            li[0].style.width = "0%";
-            li[1].style.width = "0%";
-            li[2].style.width = "0%";
-
-            setTimeout(function(){
-                li[idx].style.opacity = "1";
-                li[idx].style.width = "100%";
-                number.textContent = (idx+1);
-            },700);
-
 
             idx++;
             if(idx === 3){
                 idx = 0;
             };
 
+            slideEvent(idx);
+
          },6000);
         
         arrow();
         
-    }visualSlide();
+    }
+    visualSlide();
         
     function arrow(){
         var pager = document.querySelectorAll(".indi a");
         
         pager[0].addEventListener("click", function(){
-            idx = (idx-1);
+            if (idx === 0) {
+                idx = (li.length - 1);
+            } else {
+                idx -= 1;
+            }
+            slideEvent(idx);
         });
         
         pager[1].addEventListener("click", function(){
-            idx = (idx+1);
+            if (idx === (li.length - 1)) {
+                idx = 0;
+            } else {
+                idx += 1;
+            }
+            slideEvent(idx);
         })
     };
     
