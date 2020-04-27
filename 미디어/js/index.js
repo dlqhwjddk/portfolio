@@ -51,6 +51,11 @@ window.addEventListener("DOMContentLoaded", function(){
     var li = ul.querySelectorAll("li");
     var number = document.querySelector(".indi .number");
 
+    
+    
+    
+    //비주얼슬라이드
+    
     function slideEvent(i) {
         for (var m = 0; m < li.length; m++) {
             li[m].style.width = "0%";
@@ -64,7 +69,6 @@ window.addEventListener("DOMContentLoaded", function(){
      }
     
     
-    //비주얼슬라이드
     function visualSlide(){
 
         console.log(number);
