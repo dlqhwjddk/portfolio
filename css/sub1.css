@@ -1,0 +1,206 @@
+@import url("common.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/*font-family: 'Nanum Gothic', sans-serif; 나눔고딕*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/*font-family: 'Archivo', sans-serif; 네비 폰트*/
+
+/*네비*/
+nav{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 110px;
+   /* position: absolute;
+    left: 0; top: 0;
+    z-index: 2;*/
+}
+nav a{
+    font-size: 1.16rem;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    transition: .5s;
+}
+
+nav a:before{
+    content: "";
+    display: block;
+    width: 0%; height: 3px;
+    margin-left: 50%;
+    margin-bottom: 3px;
+    background: #62aaae;
+    transition: .3s;
+}
+nav a:hover:before{
+    margin-left: 0;
+    width: 100%;
+}
+nav a:hover{
+    color: #62aaae;
+}
+
+nav a:nth-of-type(2){
+    color: #62aaae;
+}
+/*
+nav a:nth-of-type(2):before{
+    margin-left: 0;
+    width: 100%;
+}
+*/
+/*
+.visual{
+    width: 100%;
+    position: relative;
+}
+.visual .visual_area{
+    width: 100%;padding-bottom: 20%;
+    background: url("../img/v/2.jpg");
+}
+
+.visual span{
+    position: absolute;
+    right: 9.8%; bottom: -9%;
+    font-size: 7vw;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Archivo', sans-serif;
+}
+*/
+
+.container{
+    width: 80%; height: 100%; 
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5% 0;
+    
+}
+.container h2{
+    margin-top: 7%;
+    text-align: center;
+    font-size: 2.3vw;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.container > p{
+    text-align: center;
+    font-size: 1.1vw;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.left_area{
+    width: 33%;
+    height: 100%;
+    position: relative;
+    left: 0; top: 0;
+    float: left;
+}
+.left_area .profile{
+    width: 23%;
+    position: fixed;
+    left: 13%; top: -25%;
+    margin: 20% 0 0 0;
+    padding: 5% 0 0 0;
+    text-align: center;
+    transition: .5s; 
+}
+.left_area .profile >p:nth-of-type(1){
+    width: 100%;
+    padding-bottom: 100%;
+    background: #e8e8e8;
+    border-radius: 100%;
+    position: relative;
+    left: 0; top: 0;
+}
+.left_area .profile >p img{
+    width: 100%;
+    position: absolute;
+    left: 0; bottom: 0;
+}
+.left_area .profile strong{
+    margin-top: 4%;
+    font-size: 2.4vw;
+    color: #666;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.left_area .profile >p:nth-of-type(2){
+    margin-top: 2%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.left_area .profile .education{
+    margin-top: 4%;
+    padding: 4%;
+    background: #d8e7e3;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.left_area .profile .education p{
+    color: #555;
+    white-space: pre-line;
+    margin-bottom: 3%;
+}
+.left_area .profile .education span{
+    color: #555;
+}
+.right_area{
+    width: 57%;
+    float: right;
+}
+.right_area > section{
+    margin: 10% 0;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: .5s;
+}
+.right_area > section.active:nth-of-type(1){
+    margin: 0;
+}
+.right_area > section.active{
+    margin: 10% 0;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.right_area section h3{
+    font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-style: italic;
+    letter-spacing: -5px;
+    font-size: 6vw;
+    color: rgba(0,0,0,0.04);
+}
+.right_area section p{
+    white-space: pre-line;
+    line-height: 200%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.right_area section a{
+    padding: 2%;
+    color: #a7a6a6;
+}
+.right_area .career div:nth-of-type(1){
+    float: left;
+}
+.right_area .career div:nth-of-type(2){
+    float: right;
+}
+
+footer{
+    border-top: 1px solid #b1b0b0;
+    clear: both;
+    text-align: center;
+    padding: 2%;
+}
+footer span{
+    color: #b1b0b0;
+}
+.top{
+    width: 60px; height: 60px;
+    position: fixed;
+    right: 3%; bottom: 13%;
+    background: #d8e7e3;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 51px;
+}

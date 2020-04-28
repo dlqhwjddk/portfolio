@@ -1,0 +1,268 @@
+@import url("common.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/*font-family: 'Nanum Gothic', sans-serif; 나눔고딕*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/*font-family: 'Archivo', sans-serif; 네비 폰트*/
+
+/*네비*/
+nav{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 110px;
+}
+nav a{
+    font-size: 1.16rem;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    transition: .5s;
+}
+
+nav a:before{
+    content: "";
+    display: block;
+    width: 0%; height: 3px;
+    margin-left: 50%;
+    margin-bottom: 3px;
+    background: #62aaae;
+    transition: .3s;
+}
+nav a:hover:before{
+    margin-left: 0;
+    width: 100%;
+}
+nav a:hover{
+    color: #62aaae;
+}
+
+nav a:nth-of-type(4){
+    color: #62aaae;
+}
+/*
+nav a:nth-of-type(4):before{
+    margin-left: 0;
+    width: 100%;
+}
+*/
+
+/*무비 리스트*/
+.container{
+    width: 75%;
+    padding: 5% 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Nanum Gothic', sans-serif;
+/*    border: 1px solid #f00;*/
+}
+.container figure{
+    width: 33%;
+    margin-bottom: 5%;
+}
+.container figure:last-child{
+    margin-bottom: 0;
+}
+.container figure > p{
+    width: 25%;
+    float: left;
+    display: inline-block;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    position: relative;
+    font-size: 0;
+}
+.container figure > p:after{
+    content: "";
+    width: 100%; height: 100%;
+    position: absolute;
+    left: 0; top: 0;
+    background: rgba(0,0,0,0.6) url("../img/icon/plus.png") center no-repeat;
+    opacity: 0;
+    transition: .5s;
+}
+.container figure > p:hover:after{
+    opacity: 1;
+}
+.container figure > p:hover{
+    cursor: pointer;
+}
+.container figure > p img{
+    width: 100%;
+}
+.container figure figcaption{
+    width: 65%;
+    float: right;
+    display: inline-block;
+}
+.container figure figcaption strong{
+    margin-bottom: 5px;
+}
+.container figure figcaption img{
+    width: 4.5%;
+}
+.container figure figcaption p:nth-of-type(1){
+    color: #f00;
+}
+.container figure figcaption p span{
+    color: #ddd;
+}
+.container figure figcaption p .score{
+    color: #333;
+    font-size: 0.8vw;
+}
+.container figure figcaption p:nth-of-type(2){
+    display: inline-block;
+    width: 85%;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+    height: 3em;
+    text-align: left;
+    word-wrap: break-word;
+    display: -webkit-box; 
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    font-size: 0.875rem;
+    margin: 25px 0;
+}
+
+.container figure figcaption p:nth-of-type(3){
+    font-size: 0.875rem;
+    color: #cdddd9;
+}
+
+.black{
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 100;
+    display: none;
+}
+.black.active{
+    display: block;
+}
+
+.pop{
+    background: #fff;
+    position: absolute;
+    width: 60%;
+    left: 50%; top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 3% 0 0 0;
+}
+
+.pop > p{
+    width: 25%;
+    float: left;
+    padding-left: 5%;
+}
+.pop > p img{}
+
+.pop .movie_text{
+    width: 65%;
+    float: right;
+    padding-right: 5%;
+    margin-bottom: 2%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.pop .movie_text h3{}
+.pop .movie_text small{
+    color: #999;
+}
+.pop .movie_text dl{
+    margin-top: 4%;
+}
+.pop .movie_text dl dt{
+    width: 14%;
+    float: left;
+    margin-bottom: 1%;
+    font-weight: bold;
+    line-height: 140%;
+/*    border: 1px solid #f00;*/
+}
+.pop .movie_text dl dd{
+    width: 84%;
+    float: right;
+    margin-bottom: 1%;
+    line-height: 150%;
+    font-size: 0.93rem;
+/*    border: 1px solid #0f0*/
+}
+
+.pop .trailer{
+    width: 90%;
+    clear: both;
+    background: #e6f2ef;
+    padding: 2% 5%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.pop .trailer h4{
+    margin-bottom: 2%;
+}
+.pop .trailer ul{
+    display: flex;
+}
+.pop .trailer ul li{
+    margin-right: 5%;
+    width: 20%;
+}
+
+.pop .trailer ul li a{
+    position: relative;
+    width: 100%;
+    font-size: 0;
+}
+.pop .trailer ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6) url("../img/icon/youtube.png") center no-repeat;
+    opacity: 0;
+    transition: .5s;
+}
+
+.pop .trailer ul li a:hover::after{
+    opacity: 1;
+}
+.pop .trailer ul li a img{
+    width: 100%;
+}
+.pop .trailer ul li a img::after{
+    
+}
+.pop .trailer ul li p{
+    text-align: center;
+    font-size: 0.93rem;
+}
+
+.pop > a{
+    position: absolute;
+    right: 0; top: 0;
+    padding: 5%;
+}
+
+
+/*푸터*/
+footer{
+    border-top: 1px solid #efefef;
+    clear: both;
+    text-align: center;
+    padding: 2%;
+}
+footer span{
+    color: #ccc;
+}
+.top{
+    width: 60px; height: 60px;
+    position: fixed;
+    right: 3%; bottom: 13%;
+    background: #d8e7e3;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 51px;
+    z-index: 20;
+}

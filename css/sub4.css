@@ -1,0 +1,106 @@
+@import url("common.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/*font-family: 'Nanum Gothic', sans-serif; 나눔고딕*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/*font-family: 'Archivo', sans-serif; 네비 폰트*/
+
+/*네비*/
+nav{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 110px;
+}
+nav a{
+    font-size: 1.16rem;
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    transition: .5s;
+}
+
+nav a:before{
+    content: "";
+    display: block;
+    width: 0%; height: 3px;
+    margin-left: 50%;
+    margin-bottom: 3px;
+    background: #62aaae;
+    transition: .3s;
+}
+nav a:hover:before{
+    margin-left: 0;
+    width: 100%;
+}
+nav a:hover{
+    color: #62aaae;
+}
+
+nav a:nth-of-type(5){
+    color: #62aaae;
+}
+/*
+nav a:nth-of-type(4):before{
+    margin-left: 0;
+    width: 100%;
+}
+*/
+
+/*게시판*/
+table{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-top: 1px solid #ddd;
+    border-collapse: collapse;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+table tr{
+    height: 45px;
+}
+
+table tr th{
+    border-bottom: 1px solid #ddd;
+}
+table tr td{
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    font-size: 14px;
+}
+table tr td:nth-of-type(1){
+    width: 8%;
+}
+table tr td:nth-of-type(2){
+    text-align: left;
+    width: 60%;
+}
+table tr td:last-of-type{
+    width: 8%;
+}
+table tr:last-of-type td{
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+/*푸터*/
+footer{
+    border-top: 1px solid #efefef;
+    clear: both;
+    text-align: center;
+    padding: 2%;
+}
+footer span{
+    color: #ccc;
+}
+.top{
+    width: 60px; height: 60px;
+    position: fixed;
+    right: 3%; bottom: 13%;
+    background: #d8e7e3;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 51px;
+    z-index: 20;
+}
