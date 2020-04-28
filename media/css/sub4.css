@@ -47,11 +47,25 @@ nav a:nth-of-type(4):before{
 */
 
 /*게시판*/
-table{
+.head{
     width: 60%;
     margin: 0 auto;
     margin-top: 5%;
-    margin-bottom: 5%;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.head h3{
+    font-size: 30px;
+    margin-bottom: 1%;
+}
+.head small{
+    
+}
+table{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
     border-top: 1px solid #ddd;
     border-collapse: collapse;
     font-family: 'Nanum Gothic', sans-serif;
@@ -81,8 +95,47 @@ table tr td:last-of-type{
 table tr:last-of-type td{
     border-bottom: 1px solid #ddd;
 }
+.search{
+    width: 60%; height: 25px;
+    margin: 0 auto;
+    margin-bottom: 1%;
+}
+select{
+    font-size: 14px;
+    width: 8%; height: 100%;
+    vertical-align: middle;
+}
+select option{
+    font-size: 14px;
+}
 
+input{
+    height: 21px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+button{
+    width: 5%; height: 100%;
+    font-size: 14px;
+    background: #fff;
+    vertical-align: middle;
+    border: 1px solid #a9a9ab;
+}
 
+.pager{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5.5%;
+}
+.pager a:nth-of-type(2),
+.pager a:nth-of-type(3){
+    margin: 0 0.5%;
+    color: #999;
+}
+.pager a:hover{
+    color: #666;
+}
 
 /*푸터*/
 footer{
