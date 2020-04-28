@@ -48,9 +48,42 @@ nav a:nth-of-type(4):before{
 
 /*게시판*/
 table{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-top: 1px solid #ddd;
+    border-collapse: collapse;
+    font-family: 'Nanum Gothic', sans-serif;
 }
+table tr{
+    height: 45px;
+}
+
+table tr th{
+    border-bottom: 1px solid #ddd;
+}
+table tr td{
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+    font-size: 14px;
+}
+table tr td:nth-of-type(1){
+    width: 8%;
+}
+table tr td:nth-of-type(2){
+    text-align: left;
+    width: 60%;
+}
+table tr td:last-of-type{
+    width: 8%;
+}
+table tr:last-of-type td{
+    border-bottom: 1px solid #ddd;
+}
+
+
+
 /*푸터*/
 footer{
     border-top: 1px solid #efefef;

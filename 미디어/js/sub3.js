@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", function(){
     
     
-    var figure = document.querySelectorAll(".container figure");
+    var figure = document.querySelectorAll(".container figure > p");
     var black = document.querySelector(".black");
     
     for(var i=0; i<figure.length; i++){

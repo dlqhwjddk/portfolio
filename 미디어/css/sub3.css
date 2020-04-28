@@ -197,6 +197,7 @@ nav a:nth-of-type(4):before{
     clear: both;
     background: #e6f2ef;
     padding: 2% 5%;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 .pop .trailer h4{
     margin-bottom: 2%;
