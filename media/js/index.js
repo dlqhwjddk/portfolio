@@ -58,6 +58,7 @@ window.addEventListener("DOMContentLoaded", function(){
     
     function slideEvent(i) {
         for (var m = 0; m < li.length; m++) {
+            
             li[m].style.width = "0%";
         }
 

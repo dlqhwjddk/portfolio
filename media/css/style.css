@@ -84,6 +84,7 @@ nav a:hover{
 .text_box p:nth-of-type(2){
     font-size: 5vw;
     font-weight: bold;
+    margin-top: 3%;
     color: #122225;
 }
 
@@ -164,7 +165,7 @@ nav a:hover{
     background: #96b4ae;
     opacity: 0;
 }
-.visual_list ul li img{
+.visual_list ul li img{ 
     position: absolute;
     left: 50%; bottom: 0px;
     transform: translateX(-50%);
@@ -689,7 +690,7 @@ nav a:hover{
 }
 .visual_list ul li img{
     position: absolute;
-    left: 35%; bottom: -100px;
+    left: 25%; bottom: -20%;
     transform: scale(0.75) translateX(-50%);
 }
 
@@ -764,7 +765,7 @@ nav a:hover{
 
 /*푸터*/
 footer{
-    position:absolute;bottom:10%; left:0;
+    position:absolute;bottom:5%; left:3%;
     transform: rotate(270deg);
     transform-origin: 10% 100%;
 }
@@ -778,6 +779,7 @@ footer span:after{
     display: inline-block;
     content: '';
     background: #61887e;
+    display: none;
 }
 }
 
