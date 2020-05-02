@@ -43,8 +43,9 @@ nav a:hover{
 .burger{
     width: 35px; height: 35px;
     position: relative;
+    z-index: 60;
     margin: 60px 110px;
-    display: none;
+/*    display: none;*/
 }
 .burger span{
     width: 35px; height: 2px;
@@ -58,6 +59,22 @@ nav a:hover{
 }
 .burger span:nth-of-type(3){
     top: 50%;
+}
+
+/*버거메뉴 팝*/
+.pop{
+    position: fixed;
+    left: 0; top: 0;
+    width: 30%; height: 100%;
+    z-index: 50;
+    background: #fff;
+    padding: 15% 10%;
+}
+.pop a{
+    font-size: 3rem;
+    display: block;
+    margin: 5% 0;
+    color: #62aaae;    
 }
 
 /*비주얼문구*/
@@ -307,7 +324,7 @@ nav a:hover{
     position: relative;
     margin: 60px 110px;
     display: block;
-    z-index: 10;
+    z-index: 51;
 }
 .burger:hover{
     cursor: pointer;
