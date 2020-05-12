@@ -1,22 +1,46 @@
 $(function (){
     
     
+    var param = location.href.split('=')[1];
+    var jsonUrl = ['js/filming.json','js/academy.json','js/friend.json'];
     
-    var id = getParam("id");
-    console.log(id);
-    
-    function getParam(sname){
-        var params = location.search.substr(location.search.indexOf("?") + 1);
-        var sval = "";
-        params = params.split("&");
-        for(var i=0; i<params.length; i++){
-            temp = params[i].split("=");
-            if([temp[0]] == sname){
-                sval = temp[1];
+    var li = document.querySelectorAll(".category li a");
+    var category = ['Filming Site','The Oscars 2020','Colleagues of His'];
+
+    function select(param){
+        
+        $.ajax({
+            url : jsonUrl[param],
+            type : 'GET',
+            dataType : 'json',
+            success :function(data){
+
+                for(var i in data.event){
+                    var imgNode = "<li><img src=" + data.event[i] + "></li>";
+                    $(".gallery").append(imgNode);
+                };
+
             }
-            return sval;
-        }
-    }   
+        });
+        
+        
+            
+    };
+    select(param);
+    
+    li[param].classList.add("active");
+    
+    for(var i=0; i<li.length; i++){
+        li[i].addEventListener("click", function(){
+            
+            for(var j=0; j<li.length; j++){
+                li[j].classList.remove("active");
+            }
+            
+            this.classList.add("active");
+        });
+        
+    }
     
     
     

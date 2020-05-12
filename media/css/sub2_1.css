@@ -49,6 +49,9 @@ nav a:nth-of-type(3){
 }
 .category li{}
 .category li a{}
+.category li a.active{
+    font-weight: bold;
+}
 
 .gallery{
     width: 80%;

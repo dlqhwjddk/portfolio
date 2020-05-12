@@ -201,6 +201,7 @@ nav a:nth-of-type(4):before{
 }
 .pop .trailer h4{
     margin-bottom: 2%;
+    font-family: 'Archivo', sans-serif;
 }
 .pop .trailer ul{
     display: flex;
