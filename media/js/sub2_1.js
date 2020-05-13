@@ -1,4 +1,7 @@
-$(function (){
+window.addEventListener("DOMContentLoaded", function(){
+    
+
+/*$(function (){*/
     
     
     var param = location.href.split('=')[1];
@@ -22,9 +25,7 @@ $(function (){
 
             }
         });
-        
-        
-            
+             
     };
     select(param);
     
@@ -38,16 +39,12 @@ $(function (){
             }
             
             this.classList.add("active");
-        });
-        
-    }
+        });    
+    };
+     
     
-    
-    
-    
-    
-});
-    
+/*});*/
+});    
 
     
     
