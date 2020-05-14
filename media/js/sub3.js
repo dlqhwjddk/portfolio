@@ -5,15 +5,17 @@ window.addEventListener("DOMContentLoaded", function(){
     var black = document.querySelector(".black");
     var contents = black.firstElementChild;
     
-    for(var i=0; i<figure.length; i++){
+    for(let i=0; i<figure.length; i++){
         figure[i].addEventListener("click", function(){
             contents.innerHTML = "";
+            
             black.classList.add("active");
             $.ajax({
-                url : "js/sub3/antarctic_journal.json",
+                url : "js/sub3/"+(i+1)+".json",
                 type : 'GET',
                 dataType : 'json',
                 success :function(data){
+                    console.log(i)
                     var html = "";
                     html += "<p><img src='" + data.image_main + "' alt=''></p>"
                     html += "<div class='movie_text'>"

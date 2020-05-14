@@ -1,0 +1,15 @@
+{
+  "image_main": "img/movie/pop/10.jpg",
+  "movie_text": {
+    "title_ko": "기생충",
+    "title_en": "PARASITE, 2019",
+    "information": "드라마 | 한국 | 131분 | 2019.05.30 개봉",
+    "grade": "15세 관람가",
+    "views": "10,312,516명(05.13 기준)",
+    "remark": "“폐 끼치고 싶진 않았어요”<br>전원백수로 살 길 막막하지만 사이는 좋은 기택(송강호) 가족.장남 기우(최우식)에게 명문대생 친구가 연결시켜 준 고액 과외 자리는모처럼 싹튼 고정수입의 희망이다.온 가족의 도움과 기대 속에 박사장(이선균) 집으로 향하는 기우.글로벌 IT기업 CEO인 박사장의 저택에 도착하자 젊고 아름다운 사모님 연교(조여정)가 기우를 맞이한다.<br><br>그러나 이렇게 시작된 두 가족의 만남 뒤로, 걷잡을 수 없는 사건이 기다리고 있었으니…"
+  },
+  "trailer": [
+    {"link": "https://www.youtube.com/watch?v=jBdRhhSt3Bc", "image": "img/movie/trailer/10/1.jpg", "text": "기생충 1차 예고편"},
+    {"link": "https://www.youtube.com/watch?v=Q38h5XD4RKE", "image": "img/movie/trailer/10/2.jpg", "text": "기생충 2차 예고편"},{"link": "https://www.youtube.com/watch?v=RWVU8hCZg5k", "image": "img/movie/trailer/10/3.jpg", "text": "기생충 티저 예고편"},{"link": "https://www.youtube.com/watch?v=SEUXfv87Wpk", "image": "img/movie/trailer/10/4.jpg", "text": "기생충 공식 예고편"}
+  ]
+}

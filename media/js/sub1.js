@@ -18,5 +18,4 @@ window.addEventListener("DOMContentLoaded", function(){
     var event = new CustomEvent("scroll");
     window.dispatchEvent(event);
     
-    
 });

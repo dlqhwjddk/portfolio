@@ -1,0 +1,14 @@
+{
+  "image_main": "img/movie/pop/5.jpg",
+  "movie_text": {
+    "title_ko": "도쿄!",
+    "title_en": "Tokyo!, 2008",
+    "information": "드라마 | 한국 . 프랑스 . 일본 | 111분 | 2008.10.23 개봉",
+    "grade": "15세 관람가",
+    "views": "41,572명",
+    "remark": "‘흔들리는 도쿄(Shaking Tokyo)’. 10년간 히키코모리(사회생활에 적응하지 못하고 집안에만 틀어박혀 사는 병적인 사람들을 일컫는 용어)로 집안에 틀어박혀 있던 한 남자가 어느 날 피자 배달부 여자를 사랑하게 되는 이야기. 그는 용기를 내어 바깥 세상에 나오지만 놀랍게도 온 도쿄가 전부 히키코모리 상태에 빠져있다는 것을 알게 된다. 그녀를 찾아내는 남자…. 그 순간 정신이 아찔할 정도로 강한 지진이 도시를 흔들기 시작한다."
+  },
+  "trailer": [
+    {"link": "https://www.youtube.com/watch?v=VpW7hUyJI-4", "image": "img/movie/trailer/5/1.jpg", "text": "2008 도쿄! 예고편"}
+  ]
+}

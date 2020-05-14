@@ -1,0 +1,15 @@
+{
+  "image_main": "img/movie/pop/9.jpg",
+  "movie_text": {
+    "title_ko": "옥자",
+    "title_en": "Okja, 2017",
+    "information": "모험 . 액션 . 드라마 | 한국, 미국 | 120분 | 2017.06.29 개봉",
+    "grade": "12세 관람가",
+    "views": "322,663명",
+    "remark": "우린 집으로 갈거야, 반드시 함께<br><br>강원도 산골 소녀 ‘미자’(안서현)에게 옥자는 10년 간 함께 자란 둘도 없는 친구이자 소중한 가족이다. 자연 속에서 평화롭게 지내던 어느 날, 글로벌 기업 ‘미란도’가 나타나 갑자기 옥자를 뉴욕으로 끌고가고, 할아버지(변희봉)의 만류에도 미자는 무작정 옥자를 구하기 위해 위험천만한 여정에 나선다.극비리에 옥자를 활용한 ‘슈퍼돼지 프로젝트’를 추진 중인 ‘미란도 코퍼레이션’의 CEO ‘루시 미란도’(틸다 스윈튼), 옥자를 이용해 제2의 전성기를 꿈꾸는 동물학자 ‘죠니’(제이크 질렌할), 옥자를 앞세워 또 다른 작전을 수행하려는 비밀 동물 보호 단체 ALF까지. 각자의 이권을 둘러싸고 옥자를 차지하려는 탐욕스러운 세상에 맞서, 옥자를 구출하려는 미자의 여정은 더욱 험난해져 간다."
+  },
+  "trailer": [
+    {"link": "https://www.youtube.com/watch?v=IHeIihVPHAU", "image": "img/movie/trailer/9/1.jpg", "text": "옥자 1차 공식 예고편"},
+    {"link": "https://www.youtube.com/watch?v=0-xjR_7iDAk", "image": "img/movie/trailer/9/2.jpg", "text": "옥자 2차 공식 예고편"},{"link": "https://www.youtube.com/watch?v=CP2NOnRzELc", "image": "img/movie/trailer/9/3.jpg", "text": "옥자 3차 공식 예고편"},{"link": "https://www.youtube.com/watch?v=eOdMVj1mnHE", "image": "img/movie/trailer/9/4.jpg", "text": "옥자 공식 예고편 - Netflix"}
+  ]
+}
