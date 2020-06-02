@@ -15,7 +15,7 @@ window.addEventListener("DOMContentLoaded", function(){
                 type : 'GET',
                 dataType : 'json',
                 success :function(data){
-                    console.log(i)
+//                    console.log(i)
                     var html = "";
                     html += "<p><img src='" + data.image_main + "' alt=''></p>"
                     html += "<div class='movie_text'>"

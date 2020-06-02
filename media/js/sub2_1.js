@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", function(){
     
     
     var param = location.href.split('=')[1] || "0";
-    console.log(param);
+//    console.log(param);
     var jsonUrl = ['js/sub2/filming.json','js/sub2/academy.json','js/sub2/friend.json'];
     
     var li = document.querySelectorAll(".category li a");
