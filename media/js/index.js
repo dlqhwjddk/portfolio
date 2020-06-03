@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", function(){
         var ul = document.querySelector(".slide ul");
         var slideW = ul.clientWidth;
         var clone = ul.cloneNode(true);
-        var i = 0
+        var i = 0;
         ul.append(clone);
         
         
