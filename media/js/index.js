@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", function(){
         
         setInterval(function(){
             nList.style.transition = ".5s";
-            nList.style.transform = "translateY(-"+19*(idx+1)+"px)";
+            nList.style.transform = "translateY(-"+18.5*(idx+1)+"px)";
             
             idx++;  
             

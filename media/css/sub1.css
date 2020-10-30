@@ -97,7 +97,7 @@ nav a:nth-of-type(2):before{
     float: left;
 }
 .left_area .profile{
-    width: 23%;
+    width: 20%;
     position: fixed;
     left: 13%; top: -25%;
     margin: 20% 0 0 0;

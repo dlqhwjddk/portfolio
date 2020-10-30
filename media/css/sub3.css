@@ -180,7 +180,7 @@ nav a:nth-of-type(4):before{
     float: left;
     margin-bottom: 1%;
     font-weight: bold;
-    line-height: 140%;
+    line-height: 135%;
 /*    border: 1px solid #f00;*/
 }
 .pop .movie_text dl dd{
